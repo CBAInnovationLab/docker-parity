@@ -14,6 +14,9 @@ USER parity
 
 WORKDIR /home/parity
 
+RUN mkdir -p .parity/keys/canchain \
+ && mkdir -p .parity/network
+
 EXPOSE 8080
 EXPOSE 8180
 EXPOSE 8545
