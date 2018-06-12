@@ -1,7 +1,7 @@
 FROM ubuntu:xenial
 MAINTAINER dan.turner@cba.com.au
 
-ENV PARITY_VERSION v1.10.4
+ENV PARITY_VERSION v1.10.6
 
 RUN apt-get update \
  && apt-get install -y wget dnsutils \
