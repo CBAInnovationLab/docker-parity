@@ -1,7 +1,7 @@
 FROM ubuntu:xenial
 LABEL maintainer="dan.turner@cba.com.au"
 
-ENV PARITY_VERSION v1.10.6
+ENV PARITY_VERSION v1.11.8
 
 RUN apt-get update \
  && apt-get install -y wget dnsutils jq \
