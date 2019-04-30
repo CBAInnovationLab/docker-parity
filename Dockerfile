@@ -1,11 +1,11 @@
 FROM ubuntu:xenial
-LABEL maintainer="dan.turner@cba.com.au"
+LABEL maintainer="admin@commbanklabs.com.au"
 
-ENV PARITY_VERSION v1.11.8
+ENV PARITY_VERSION v2.4.5
 
 RUN apt-get update \
  && apt-get install -y wget dnsutils jq \
- && wget https://d1h4xl4cr1h0mo.cloudfront.net/${PARITY_VERSION}/x86_64-unknown-linux-gnu/parity \
+ && wget https://releases.parity.io/ethereum/${PARITY_VERSION}/x86_64-unknown-linux-gnu/parity \
  && chmod +x parity \
  && mv parity /usr/local/bin \
  && useradd -ms /bin/bash parity
